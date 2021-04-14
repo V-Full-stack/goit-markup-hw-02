@@ -10,3 +10,13 @@
 .header-link {
   color: #212121;
 }
+
+.hero-title {
+  color: #ffffff;
+  background-color: #2f303a;
+}
+
+.hero-btn {
+  color: #ffffff;
+  background-color: #2196f3;
+}
