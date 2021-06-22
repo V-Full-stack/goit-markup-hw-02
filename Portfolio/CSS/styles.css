@@ -12,6 +12,8 @@
   --alt-title-color: #ffffff;
   --second-bg: #2f303a;
 
+  --dark-bg: #2f303a;
+
   --main-font: "Roboto", sans-serif;
   --title-font: "Roboto", sans-serif;
 }
@@ -55,20 +57,20 @@
 }
 
 .btn {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--mail-title-color);
-background-color: var(--alt-bg-text);
-cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--mail-title-color);
+  background-color: var(--alt-bg-text);
+  cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus {
-    color: var(--alt-title-color);
-    background-color: var(--accent-color);
+  color: var(--alt-title-color);
+  background-color: var(--accent-color);
 }
 
 .title {
@@ -80,7 +82,15 @@ cursor: pointer;
 
 .title-label {
   font-size: 16px;
-  line-height: 1.87
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+.place {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 0.58;
+  letter-spacing: 0.03em;
+  color: var(--alt-title-color);
 }
