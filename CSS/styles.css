@@ -4,8 +4,12 @@
   --primary-text-color: #757575;
   --secondary-text-color: #ffffff;
   --primary-beackround-color: #ffffff;
+  --second-bg: #f5f4fa;
   --accent-color: #757575;
-  --title-color: ;
+}
+
+.header-list {
+  cursor: pointer;
 }
 
 .header-link {
@@ -20,4 +24,49 @@
 .hero-btn {
   color: #ffffff;
   background-color: #2196f3;
+}
+
+/* Czapka 1ша секция */
+
+/* Особенности 2га секция */
+. .features {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/* Чем мы занимаемся, 3-тя секция */
+
+.title {
+  text-align: center;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.deal {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.about-position {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 0.84px;
+}
+
+/* OUR TEAM 4та секция */
+.team {
+  background-color: #f5f4fa;
+}
+
+.designer {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
 }
