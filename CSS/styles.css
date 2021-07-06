@@ -6,6 +6,7 @@
   --primary-beackround-color: #ffffff;
   --second-bg: #f5f4fa;
   --accent-color: #757575;
+  --dark-bg: #2f303a;
 }
 
 .header-list {
@@ -32,12 +33,51 @@
 }
 
 /* Верхняя линия */
-.header-list {
-  display: flex;
-  flex-wrap: wrap;
+
+.header {
+  padding: 24px 0 25px 0;
+  position: relative;
+  border: ;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 90px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  text-decoration: none;
+  list-style: none;
+}
+
+.header-link {
+  margin-right: 50px;
+}
 /* Czapka 1ша секция */
+
+.dark-bg {
+  border-color: var(--dark-bg);
+}
 
 /* Особенности 2га секция */
 .features {
