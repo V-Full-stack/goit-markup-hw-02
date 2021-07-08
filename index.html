@@ -11,9 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="">
 </head>
 
 <body>
@@ -23,27 +25,28 @@
             <div class="header-center">
                 <nav class="nav">
                     <a href="" class="logo">
-                    <img src="./Portfolio/images-portfolio/webstudio.svg" alt="Logo WebStudio">
+                    <img src="./Portfolio/images-portfolio/webstudio.svg" alt="Logo WebStudio" width="145" height="31">
                     </a>
                     <ul class="header-list list">
                         <li class="header-link">
-                            <a class="list" href="">Студия</a>
+                            <a class="menu-link current" href="">Студия</a>
                         </li>
                         <li class="header-link">
-                            <a class="list" href="">Портфолио</a>
+                            <a class="menu-link" href="">Портфолио</a>
                         </li>
                         <li class="header-link">
-                            <a class="list" href="">Контакты</a>
+                            <a class="menu-link" href="">Контакты</a>
                         </li>
                     </ul>
                 </nav>
                 <!-- >>> COMPONENTS <<< -->
-                <ul class="header-list list">
+                   <ul class="header-list list">
                     <li>
-                        <a class="mail-link list" href="mailto:info@example.com">info@example.com</a></li>
+                        <a class="menu-link mail-link list" href="mailto:info@example.com">info@example.com</a></li>
                     <li>
-                        <a class="tel-link list" href="+380991111111">+38 099 111 11 11</a></li>
-                </ul>
+                        <a class="menu-link tel-link list" href="+380991111111">+38 099 111 11 11</a></li>
+                  </ul> 
+         
             </div>
         </div>
     </header>
@@ -83,7 +86,7 @@
         </section>
 
 <!-- Чем мы занимаемся, 3-тя секция -->
-        <h2 class="about-title title">Чем мы занимаемся</h2>
+        <h2 class="about-title duty-title">Чем мы занимаемся</h2>
         <ul class="about-list list">
             <li class="deal">
                 <img src="./images/box1.jpg" alt="Sprawdza kod" width="370" />
@@ -98,7 +101,8 @@
 
 <!-- OUR TEAM 4та секция -->
     <section class="team">
-        <h2 class="about-title title">Наша команда</h2>
+        <div class="team-container section">
+                 <h2 class="about-title team-title">Наша команда</h2>
         <ul class="team-list list">
             <li class="designer">
                 <img src="./images/Игорь_Демьяненко.jpg" alt="Product Designer" width="270" height="260">
@@ -120,7 +124,8 @@
                 <h3 class="about-name">Михаил Ермаков</h3>
                 <p class="about-position">UI Designer</p>
             </li>
-        </ul>
+        </ul> 
+        </div>
     </section>
     </main>
 
@@ -128,13 +133,15 @@
     <footer>
         <!-- <a href="/">WebStudio</a> -->
         <a href="" class="logo">
-            <img src="./Portfolio/images-portfolio/webstudio.svg" alt="Logo WebStudio">
+            <img src="./Portfolio/images-portfolio/webstudio.svg" alt="Logo WebStudio" width="145" height="31">
         </a>
         <address>
             <p>г. Киев, пр-т Леси Украинки, 26</p>
             <ul>
-                <li><a href="mailto:info@example.com">info@example.com</a></li>
-                <li><a href="+380991111111">+38 099 111 11 11</a></li>
+                <li>
+                    <a  class="mail-link list" href="mailto:info@example.com">info@example.com</a></li>
+                <li>
+                    <a class="tel-link list" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
         </address>
     </footer>

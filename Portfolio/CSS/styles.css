@@ -91,6 +91,9 @@
 }
 
 /* HEADER */
+.header {
+  padding: 24px 0 25px 0;
+}
 
 .header-center {
   display: flex;
@@ -139,6 +142,12 @@
 /* ORTFOLIO SECTION */
 
 .portfolio-list {
+  padding-top: 180px;
+  padding-bottom: 345px;
+  /* padding-left: 215px;
+  padding-right: 215px; */
+
+  /* padding-bottom: 345px; */
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
