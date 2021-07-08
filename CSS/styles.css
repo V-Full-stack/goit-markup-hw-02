@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --primary-title-color: #2f303a;
   --secondary-title-color: #ffffff;
@@ -7,6 +13,7 @@
   --second-bg: #f5f4fa;
   --accent-color: #757575;
   --dark-bg: #2f303a;
+  --blue-color: #2196f3;
 }
 
 .header-list {
@@ -63,6 +70,7 @@
 .header-list {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .list {
@@ -70,9 +78,31 @@
   list-style: none;
 }
 
-.header-link {
+.header-link:not(:last-child) {
   margin-right: 50px;
 }
+
+/* --- >>> COMPONENTS <<< --- */
+
+.mail-link {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-right: 50px;
+}
+
+.tel-link {
+  color: var(--blue-color);
+
+  color: var(--primary-text-color);
+}
+
+.link {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.14;
+}
+
 /* Czapka 1ша секция */
 
 .dark-bg {

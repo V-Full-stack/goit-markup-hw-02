@@ -13,32 +13,49 @@
 
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
+
 <!-- == HEADER == -->
 <body>
-    <header>
-        <nav>
-            <a class="link" href="./images-portfolio/"><img src="./images-portfolio/WebStudio.svg" alt="Logo WebStudio" /></a>
-            <ul class="header-list">
-                <li><a class="link" href="#stydio" class="header-link">Студия</a></li>
-                <li><a class="link" href="" class="header-link">Портфолио</a></li>
-                <li><a class="link" href="" class="header-link">Контакты</a></li>
+<header>
+    <div class="header-center container">
+        <!-- <div> -->
+            <nav class="nav">
+                <a class="logo-link" href="./images-portfolio/">
+                    <img src="./images-portfolio/WebStudio.svg" alt="Logo WebStudio" />
+                </a>
+                    <ul class="list header-list">
+                        <li class="header-link">
+                            <a class="link" href="">Студия</a></li>
+                        <li class="header-link">
+                            <a class="link" href="">Портфолио</a></li>
+                        <li class="header-link">
+                            <a class="link" href="">Контакты</a></li>
+                    </ul>
+            </nav>
+            <ul class="header-list list">
+                <li>
+                    <a class="tel-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li>
+                    <a class="link" href="info@devstudio.com">info@devstudio.com</a>
+                </li>
             </ul>
-        </nav>
-        <ul class="list">
-            <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            <li><a class="link" href="info@devstudio.com">info@devstudio.com</a></li>
-        </ul>
-    </header>
+        <!-- </div> -->
+    </div>
+</header>
 
 <!--== Section 1 ==-->
+<div>
     <section>
-            <ul class="about-button-list">
+        <div class="header-center box">
+            <ul class="about-button-list list">
                 <button class="link btn" type="button">Все</button>
                 <button class="link btn" type="button">Веб-сайты</button>
                 <button class="link btn" type="button">Приложения</button>
                 <button class="link btn" type="button">Дизайн</button>
                 <button class="link btn" type="button">Маркетинг</button>
             </ul>
+        </div>
     </section>
 
 <!-- PORTFOLIO SECTION -->
@@ -92,6 +109,7 @@
             </li>
         </ul>
     </section>
+</div>
 
     <footer class="">
         <a class="link" href="/">WebStudio</a>
