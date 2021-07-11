@@ -13,7 +13,14 @@
 }
 /* "Raleway", sans-serif; */
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .body {
+  /* width: 1200px; */
   font-family: var(--main-font);
   font-size: 16px;
   line-height: 18.7;
@@ -38,17 +45,14 @@
 }
 
 .link:hover,
-.link:focus {
+.link:focus,
+.current {
   color: var(--accent-color);
 }
 
 .list {
   list-style: none;
   text-decoration: none;
-}
-
-.address {
-  font-style: inherit;
 }
 
 .btn {
@@ -83,7 +87,7 @@
 }
 
 .place {
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 14px;
   line-height: 0.58;
   letter-spacing: 0.03em;
@@ -100,13 +104,30 @@
   align-items: center;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .nav {
   display: flex;
   align-items: center;
 }
 
-.logo-link {
-  margin-right: 90px;
+.logo {
+  margin-right: 95px;
+  color: #212121;
+
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-accent {
+  color: #2196f3;
 }
 
 .list {
@@ -157,4 +178,23 @@
 .portfolio-item-picture {
   margin-left: 30px;
   margin-top: 30px;
+}
+
+display: block;
+
+/* >> PODWAL << */
+
+/* .logo-accent {
+  color: var (var(--accent-color));
+} */
+
+.address {
+  font-style: inherit;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
