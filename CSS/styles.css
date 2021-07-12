@@ -48,6 +48,10 @@ body {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+
+  width: 1200px;
+  height: 600px;
+  left: 0px;
 }
 
 .hero-btn.btn {
@@ -194,9 +198,6 @@ color: #2196F3; */
 
 .dark-bg {
   background-color: var(--dark-bg);
-  width: 1200px;
-  height: 600px;
-  left: 0px;
 }
 
 /* Особенности 2га секция */
@@ -296,6 +297,11 @@ color: #2196F3; */
 }
 
 .footer-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-address {
   padding: 60 0 60 0;
 }
 
