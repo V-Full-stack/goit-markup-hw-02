@@ -96,7 +96,8 @@
 
 /* HEADER */
 .header {
-  padding: 24px 0 25px 0;
+  padding: 32px 0 32px 0;
+  border: 1px solid #ececec;
 }
 
 .header-center {
@@ -116,6 +117,8 @@
 }
 
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
   margin-right: 95px;
   color: #212121;
 
@@ -133,10 +136,13 @@
 .list {
   display: flex;
   align-items: center;
+  list-style: none;
+  text-decoration: none;
 }
 
 .header-list {
   margin-left: auto;
+  margin-right: 8px;
 }
 
 .tel-link {
@@ -160,7 +166,53 @@
   top: 174px;
 }
 
-/* ORTFOLIO SECTION */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn-current {
+  color: var(--alt-title-color);
+  background-color: var(--accent-color);
+}
+
+/* --- >>> PORTFOLIO SECTION <<< --- */
+
+.item-list-link-wrapper {
+  display: block;
+}
+
+.team-list-wrapper-img {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 294px;
+  width: 100%;
+  background-color: rgba(33, 150, 243, 0.8);
+  color: #ffffff;
+  overflow: auto;
+  padding: 20px;
+}
+
+.logo-list-content {
+  display: inherit;
+}
 
 .portfolio-list {
   padding-top: 180px;

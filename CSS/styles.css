@@ -41,7 +41,7 @@ body {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -50,14 +50,14 @@ body {
   padding-bottom: 200px;
 }
 
-.hero-btn.btn {  
+.hero-btn.btn {
   /* display: flex; */
   color: var(--primary-beackround-color);
   background-color: var(--blue-color);
 
   /* font-weight: 700; */
   font-size: 16px;
-  line-height: 1.87
+  line-height: 1.87;
   letter-spacing: 0.06em;
 
   /* align-items: center; */
@@ -80,6 +80,7 @@ body {
 
 .header {
   padding: 24px 0 25px 0;
+  border: 1px solid #ececec;
   position: relative;
   border: ;
 }
@@ -118,7 +119,7 @@ body {
 }
 
 .logo-accent {
- color: #2196F3;
+  color: #2196f3;
 }
 
 .header-list {
@@ -145,7 +146,7 @@ body {
   list-style: none;
 
   font-weight: 500;
-  font-size: 14px;
+  font-size: 14;
   line-height: 16px;
   letter-spacing: 0.02em;
 
@@ -193,8 +194,9 @@ color: #2196F3; */
 
 .dark-bg {
   background-color: var(--dark-bg);
-  width: 1600px;
+  width: 1200px;
   height: 600px;
+  left: 0px;
 }
 
 /* Особенности 2га секция */
@@ -220,7 +222,6 @@ color: #2196F3; */
   color: var(--primary-text-color);
 }
 
-
 /* Чем мы занимаемся, 3-тя секция */
 
 .about-list {
@@ -238,7 +239,7 @@ color: #2196F3; */
 
 .about-position {
   color: var(--primary-text-color);
-  font-size: 16px;
+  font-size: 16;
   line-height: 0.84px;
 }
 
@@ -252,12 +253,12 @@ color: #2196F3; */
 
 .team-title,
 .duty-title {
-font-weight: bold;
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
+  font-weight: bold;
+  font-size: 36;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .team-list {
@@ -290,6 +291,13 @@ color: #212121;
 }
 
 /* -->> Подвал <<-- */
+
+.dark-bg-footer {
+}
+
+.footer-box {
+  padding: 60 0 60 0;
+}
 
 .address {
   font-style: normal;
