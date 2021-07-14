@@ -124,6 +124,7 @@ p {
 
 .container {
   width: 1200px;
+  padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -146,12 +147,17 @@ p {
   letter-spacing: 0.03em;
 }
 
+.col-logo-footer {
+  color: #ffffff;
+}
+
 .logo-accent {
   color: #2196f3;
 }
 
 .list {
   display: flex;
+  list-style: none;
   /* align-items: center; */
 }
 
@@ -260,28 +266,32 @@ element-style {
 }
 
 .portfolio-list {
-  display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  margin: auto;
+  margin-left: -30px;
+  margin-top: -30px;
+
+  /* justify-content: space-between; */
+  /* width: 1200px; */
+  /* margin: auto; */
 
   padding-top: 180px;
   padding-bottom: 345px;
 
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .portfolio-item-picture {
-  flex-basis: calc((100 - 60px) / 3);
+  flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
+  /* display: block; */
 }
 
-display: block;
-
 /* >> PODWAL << */
+
+footer .container {
+  display: flex;
+  align-items: baseline;
+}
 
 .dark-bg {
   background-color: var(--second-bg);
@@ -291,11 +301,19 @@ display: block;
   color: var (var(--accent-color));
 } */
 .logo-address {
+  display: block;
+  padding-top: 60px;
 }
 
 .footer-box {
-  padding-top: 60px;
+  margin-top: 60px;
   padding-bottom: 60px;
+  background: var(--dark-bg);
+
+  width: 1200px;
+  padding: 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .address {
@@ -306,4 +324,40 @@ display: block;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-con .map {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--alt-title-color);
+}
+
+.footer-con .link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* присоединяйтесь */
+
+.social-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--alt-title-color);
+}
+
+.soc-container {
+  display: flex;
 }
