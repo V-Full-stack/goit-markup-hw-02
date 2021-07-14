@@ -11,7 +11,7 @@
   --secondary-text-color: #ffffff;
   --primary-beackround-color: #ffffff;
   --second-bg: #f5f4fa;
-  --accent-color: #757575;
+
   --dark-bg: #2f303a;
   --blue-color: #2196f3;
 }
@@ -113,7 +113,7 @@ body {
 
 .logo {
   margin-right: 95px;
-  padding-left: 215px;
+
   color: #212121;
 
   font-family: Raleway;
@@ -152,11 +152,10 @@ body {
 
 .menu-link {
   text-decoration: none;
-  list-style: none;
 
   font-weight: 500;
-  font-size: 14;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 1.33;
   letter-spacing: 0.02em;
 
   color: #212121;
@@ -182,20 +181,26 @@ color: #2196F3; */
 /* --- >>> COMPONENTS <<< --- */
 
 .mail-link {
+  font-style: normal;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.33;
   letter-spacing: 0.02em;
   margin-right: 50px;
 }
 
-.tel-link {
+.tel-link .mail-link {
   color: var(--blue-color);
   color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
 }
 
 .link {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.33;
   letter-spacing: 1.14;
 }
 
@@ -255,8 +260,8 @@ color: #2196F3; */
 
 .about-position {
   color: var(--primary-text-color);
-  font-size: 16;
-  line-height: 0.84px;
+  font-size: 16px;
+  line-height: 0.84;
 }
 
 /* OUR TEAM 4та секция */
@@ -270,7 +275,7 @@ color: #2196F3; */
 .team-title,
 .duty-title {
   font-weight: bold;
-  font-size: 36;
+  font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;

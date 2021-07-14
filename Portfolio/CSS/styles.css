@@ -14,6 +14,13 @@ html {
   box-sizing: border-box;
 }
 
+::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  white-space: pre;
+  text-transform: none;
+  }
+
 *,
 *::before,
 *::after {
@@ -46,15 +53,17 @@ p {
 }
 
 .visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
   overflow: hidden;
-}
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+  }
 
 .link {
   color: inherit;
@@ -176,7 +185,20 @@ p {
 
 /* --->>> Section 1 <<<--- */
 
-.box {
+section {
+  padding: 94px 0;
+}
+
+
+
+.filters-list.list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  }
+
+  
+/* .box {
   display: flex;
   align-items: center;
 
@@ -184,7 +206,7 @@ p {
   width: 611px;
   height: 54px;
   left: 495px;
-  top: 174px;
+  top: 174px; */
 }
 
 .visually-hidden {
@@ -198,10 +220,6 @@ p {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
-
-.about-button-list {
-  /* margin: auto; */
 }
 
 .button-item:not(:last-child) {
@@ -265,7 +283,7 @@ element-style {
   display: inherit;
 }
 
-.portfolio-list {
+.list {
   margin-left: -30px;
   margin-top: -30px;
 
