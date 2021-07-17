@@ -26,6 +26,19 @@ body {
   font-family: ;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, 
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
 .header-list {
   cursor: pointer;
 }
@@ -78,15 +91,17 @@ body {
 .list {
   text-decoration: none;
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 
-/* Верхняя линия */
+/* --- >>> Верхняя линия --- <<<*/
 
 .header {
   padding: 24px 0 25px 0;
   border: 1px solid #ececec;
   position: relative;
-  border: ;
+
 }
 
 .container {
@@ -112,10 +127,7 @@ body {
 }
 
 .logo {
-  margin-right: 95px;
-
   color: #212121;
-
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -131,19 +143,23 @@ body {
   color: #2196f3;
 }
 
+.header-list-nav {
+  margin-left: 94px;
+}
+
 .header-list {
-  display: flex;
-  align-items: center;
   margin-left: auto;
 }
 
 .mail-link {
   font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  margin-right: 50px;
 }
 
 .menu-link.current {
@@ -178,19 +194,20 @@ color: #2196F3; */
   margin-right: 50px;
 }
 
+.top-down-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  }
+
 /* --- >>> COMPONENTS <<< --- */
 
-.mail-link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.33;
-  letter-spacing: 0.02em;
-  margin-right: 50px;
-}
 
 .tel-link .mail-link {
   color: var(--blue-color);
-  color: var(--primary-text-color);
+  color: #757575;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -318,8 +335,14 @@ footer .container {
   align-items: baseline;
 }
 
-.dark-bg {
-  background-color: var(--dark-bg);
+footer .logo {
+display: inline-block;
+margin-bottom: 20px;
+}
+
+footer {
+  padding: 60px 0;
+  background: var(--dark-bg);
 }
 
 .logo-address {
