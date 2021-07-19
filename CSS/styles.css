@@ -23,7 +23,7 @@
 }
 
 body {
-  font-family: ;
+
 }
 
 h1,
@@ -106,9 +106,10 @@ ul {
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  padding: 0 15px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
@@ -207,12 +208,7 @@ color: #2196F3; */
 
 .tel-link .mail-link {
   color: var(--blue-color);
-  color: #757575;
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.33;
-  letter-spacing: 0.02em;
 }
 
 .link {
@@ -371,6 +367,12 @@ footer {
   letter-spacing: 0.03em;
 }
 
+.footer-list {
+  list-style: none;
+  text-decoration: none;
+}
+
+
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -385,9 +387,5 @@ footer {
 }
 
 .footer-con .link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
