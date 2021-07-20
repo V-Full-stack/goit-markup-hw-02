@@ -292,7 +292,6 @@ flex-wrap: wrap;
   color: #ffffff;
   overflow: auto;
   padding: 20px;
-
   transform: translateY(100%);
 }
 
@@ -359,9 +358,6 @@ footer .container {
   color: var(--primary-white-color);
   }
 
-.logo-address {
-
-}
 
 footer {
   padding: 60px 0;
@@ -397,6 +393,7 @@ footer .logo {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--alt-title-color);
+  white-space: nowrap;
 }
 
 .footer-con .link {
@@ -407,12 +404,10 @@ footer .logo {
   color: rgba(255, 255, 255, 0.6);
 }
 
-
 /* присоединяйтесь */
 
 .social-title {
   margin-left: 70px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
