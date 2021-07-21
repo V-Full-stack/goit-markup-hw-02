@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Roboto";
+  --font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
 }
@@ -52,22 +52,21 @@ ul {
   color: var(--secondary-title-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: 1.5;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
 }
-
-
-
 
 .hero {
   background-color: var(--dark-bg);
-  width: 1200px;
-  height: 600px;
+  text-align: center;
+ 
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-left: auto; margin-right: auto;
+  max-width: 1600px;
+  /* height: 600px; */
+  margin-left: auto; 
+  margin-right: auto;
 }
 
 .hero-btn.btn {
@@ -255,6 +254,7 @@ color: #2196F3; */
 }
 
 .service-subtitle {
+  padding-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -274,6 +274,10 @@ color: #2196F3; */
 
 .about-title {
   padding-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .about-list {
@@ -290,6 +294,28 @@ color: #2196F3; */
   margin-top: 30px;
 }
 
+.offers-wrap {
+  position: relative;
+}
+
+.offer-label {
+  font-weight: 700;
+  font-style: normal;
+   position: absolute;
+  font-weight: bold;
+  padding: 27px 0;
+  width: 100%;
+  bottom: 0;
+  display: block;
+  font-size: 14px;
+  line-height: 0.9;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  background: rgba(47, 48, 58, 0.8);
+}
+
 .about-position {
   color: var(--primary-text-color);
   font-size: 16px;
@@ -297,22 +323,11 @@ color: #2196F3; */
 }
 
 /* OUR TEAM 4та секция */
+
 .team {
   background-color: #f5f4fa;
 }
 
-.team-container {
-}
-
-.team-title,
-.duty-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
 
 .team-list {
   display: flex;
@@ -325,12 +340,25 @@ color: #2196F3; */
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-member {
+  padding: 30px 0;
+  /* position: absolute;
+  width: 270px;
+  height: 368px;
+  left: 215px;
+  top: 1635px; */
 }
 
 .about-name {
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.89;
+  line-height: 1.9;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -341,6 +369,7 @@ color: #2196F3; */
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 /* -->> Подвал <<-- */
@@ -387,9 +416,7 @@ footer {
 
 .footer-list {
   list-style: none;
-
 }
-
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
