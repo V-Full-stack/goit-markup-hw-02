@@ -18,6 +18,11 @@
 
 body {
 margin: 0;
+font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
 }
 
 h1,
@@ -57,8 +62,7 @@ ul {
   
   padding-top: 200px;
   padding-bottom: 200px;
-  width: 1200px;
-  /* height: 600px; */
+  max-width: 1600px
   margin-left: auto; 
   margin-right: auto;
 }
