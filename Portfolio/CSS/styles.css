@@ -60,6 +60,10 @@ ul {
   background: #E5E5E5;
 }
 
+img {
+  width: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -90,8 +94,6 @@ ul {
 }
 
 .button-item:not(:last-child) {
-
-
 
 }
 
@@ -294,8 +296,7 @@ font-style: normal;
 text-align: left;
 font-size: 18px;
 line-height: 2;
-letter-spacing: 0.06em;
-
+letter-spacing: 0.03em;
 color: var(--mail-title-color);
 }
 
